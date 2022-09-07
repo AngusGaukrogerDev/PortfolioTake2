@@ -26,6 +26,11 @@
 
 </head>
 <body>
+    <style>
+        body {
+            padding-top: 50px;
+        }
+    </style>
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top">
         <div class="container d-flex align-items-center justify-content-between">
@@ -38,16 +43,16 @@
                 <ul>
                     <li><a class="nav-link" asp-controller="Home" asp-action="AboutMe">About Me</a></li>
                     <li class="dropdown">
-                        <a asp-controller="Travel" asp-action="Index"><span>Travel</span> <i class="bi bi-chevron-down"></i></a>
+                        <a asp-controller="Travel" asp-action="Index"><span>Travel</span></i></a>
                         <ul>
                             <li class="dropdown">
-                                <a asp-controller="Spain" asp-action="Index"><span>Spain</span> <i class="bi bi-chevron-right"></i></a>
+                                <a asp-controller="Spain" asp-action="Index"><span>Spain</span></i></a>
                                 <ul>
                                     <li><a asp-controller="Spain" asp-action="Barcelona">Barcelona</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a asp-controller="Peru" asp-action="Index"><span>Perú</span> <i class="bi bi-chevron-right"></i></a>
+                                <a asp-controller="Peru" asp-action="Index"><span>Perú</span></a>
                                 <ul>
                                     <li><a asp-controller="Peru" asp-action="Lima">Lima</a></li>
                                     <li><a asp-controller="Peru" asp-action="Huaraz">Huaraz</a></li>
@@ -66,7 +71,7 @@
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a asp-controller="Colombia" asp-action="Index"><span>Colombia</span> <i class="bi bi-chevron-right"></i></a>
+                                <a asp-controller="Colombia" asp-action="Index"><span>Colombia</span></a>
                                 <ul>
                                     <li><a asp-controller="Colombia" asp-action="Cartagena">Cartagena</a></li>
                                     <li><a asp-controller="Colombia" asp-action="RosarioIslands">Rosario Islands</a></li>
@@ -78,7 +83,7 @@
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a asp-controller="Ecuador" asp-action="Index"><span>Ecuador</span> <i class="bi bi-chevron-right"></i></a>
+                                <a asp-controller="Ecuador" asp-action="Index"><span>Ecuador</span></a>
                                 <ul>
                                     <li><a asp-controller="Ecuador" asp-action="Cuenca">Cuenca</a></li>
                                 </ul>
