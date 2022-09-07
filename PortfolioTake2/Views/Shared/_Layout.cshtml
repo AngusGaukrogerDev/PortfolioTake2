@@ -40,7 +40,31 @@
                     <li class="dropdown">
                         <a asp-controller="Travel" asp-action="Index"><span>Travel</span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
-                            <li><a asp-controller="Spain" asp-action="Index">Spain</a></li>
+                            <li class="dropdown">
+                                <a asp-controller="Spain" asp-action="Index"><span>Spain</span> <i class="bi bi-chevron-right"></i></a>
+                                <ul>
+                                    <li><a asp-controller="Spain" asp-action="Barcelona">Barcelona</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a asp-controller="Peru" asp-action="Index"><span>Perú</span> <i class="bi bi-chevron-right"></i></a>
+                                <ul>
+                                    <li><a asp-controller="Peru" asp-action="Lima">Lima</a></li>
+                                    <li><a asp-controller="Peru" asp-action="Huaraz">Huaraz</a></li>
+                                    <li><a asp-controller="Peru" asp-action="Huanchaco">Huanchaco</a></li>
+                                    <li><a asp-controller="Peru" asp-action="Cajamarca">Cajamarca</a></li>
+                                    <li><a asp-controller="Peru" asp-action="Chachapoyas">Chachapoyas</a></li>
+                                    <li><a asp-controller="Peru" asp-action="Piura">Piura</a></li>
+                                    <li><a asp-controller="Peru" asp-action="Mancora">Mancora</a></li>
+                                    <li><a asp-controller="Peru" asp-action="Tumbes">Tumbes</a></li>
+                                    <li><a asp-controller="Peru" asp-action="Cusco">Cusco</a></li>
+                                    <li><a asp-controller="Peru" asp-action="Ollantaytambo">Ollantaytambo</a></li>
+                                    <li><a asp-controller="Peru" asp-action="Pisac">Pisac</a></li>
+                                    <li><a asp-controller="Peru" asp-action="Arequipa">Arequipa</a></li>
+                                    <li><a asp-controller="Peru" asp-action="Paracas">Paracas</a></li>
+                                    <li><a asp-controller="Peru" asp-action="Huacachina">Huacachina</a></li>
+                                </ul>
+                            </li>
                             <li class="dropdown">
                                 <a asp-controller="Colombia" asp-action="Index"><span>Colombia</span> <i class="bi bi-chevron-right"></i></a>
                                 <ul>
@@ -53,8 +77,13 @@
                                     <li><a asp-controller="Colombia" asp-action="Bogota">Bogotá</a></li>
                                 </ul>
                             </li>
-                            <li><a asp-controller="Ecuador" asp-action="Index">Ecuador</a></li>
-                            <li><a asp-controller="Peru" asp-action="Index">Perú</a></li>
+                            <li class="dropdown">
+                                <a asp-controller="Ecuador" asp-action="Index"><span>Ecuador</span> <i class="bi bi-chevron-right"></i></a>
+                                <ul>
+                                    <li><a asp-controller="Ecuador" asp-action="Cuenca">Cuenca</a></li>
+                                </ul>
+                            </li>
+                            
                         </ul>
                     </li>
                     <li><a class="nav-link" asp-controller="Podcast" asp-action="Index">The __ Podcast</a></li>

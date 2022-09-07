@@ -8,5 +8,10 @@ namespace PortfolioTake2.Controllers
         {
             return View();
         }
+
+        public IActionResult Cuenca()
+        {
+            return View();
+        }
     }
 }

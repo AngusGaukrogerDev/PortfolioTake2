@@ -8,5 +8,9 @@ namespace PortfolioTake2.Controllers
         {
             return View();
         }
+        public IActionResult Barcelona()
+        {
+            return View();
+        }
     }
 }
