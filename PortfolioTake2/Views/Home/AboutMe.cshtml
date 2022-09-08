@@ -11,9 +11,9 @@
             <p>Hola! Qué más pues? My name is Angus and I would like to welcome you to my website and personal portfolio.</p>
         </div>
 
-        <div class="row content">
+        <div class="row content d-flex align-content-center">
             <div class="col-md-5 about__photo" data-aos="fade-right" data-aos-delay="100">
-                <img src="~/Images/Pic1.jpg" width="75%" height="75%" class=" img-fluid" alt="">
+                <img src="~/Images/GradPic.jpg" width="100%" height="100%" class="align-content-center justify-content-center flex-grow-1 img-fluid" alt="">
             </div>
             <div class="col-md-7 pt-4" data-aos="fade-left" data-aos-delay="100">
                 <h3>Professional Background</h3>
@@ -26,28 +26,35 @@
                         In my free time outside of work, I have been learning .NET based web technologies. Hence the desire to build this Portfolio website using ASP.NET CORE MVC.
                         I very much enjoy the challenge of web development, as it is a very different challenge to what  have previously encountered in my work. I have an interest in all parts of the stack, although I find that CSS can be rather frustrating at times!
                     </li>
-                    <li> In .NET I have experience designing WPF applications (MVVM), ASP.NET CORE (MVC, Razor Pages), ASP.NET Web Forms, Windows Forms and Windows Console Applications. As well as this, I have written code for various embedded projects, using languages such as C, C++, Python as well as the Kuka Robot Language.</li>
+                    <li> 
+                        In .NET I have experience designing WPF applications (MVVM), ASP.NET CORE (MVC, Razor Pages), ASP.NET Web Forms, Windows Forms and Windows Console Applications. As well as this, I have written code for various embedded projects, using languages such as C, C++, Python as well as the Kuka Robot Language.
+                    </li>
+                    <li> 
+                        In 2021, I graduated from the University of Portsmouth with a Bachelors Degree in Electronic Engineering. I graduated with a 2:1 overall. 
+                    </li>
+                    
                 </ul>               
             </div>
-            <div class="row content">
-                <div class="col-md-5 order-1 order-md-2" data-aos="fade-left">
-                    <img src="~/Images/Pic1.jpg" width="75%" height="75%" class=" img-fluid" alt="">
+            
 
-                </div>
-                <div class="col-md-7 pt-5 order-2 order-md-1" data-aos="fade-right">
-                    <h3>My Hobbies</h3>
-                    <p class="fst-italic">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua.
-                    </p>
-                    <p>
-                        Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                        culpa qui officia deserunt mollit anim id est laborum
-                    </p>
-                </div>
+        </div>
+        <div class="row content">
+            <div class="col-md-5 order-1 order-md-2" data-aos="fade-left">
+                <img src="~/Images/Pic1.jpg" width="75%" height="75%" class="flex-grow-1 align-content-center justify-content-center img-fluid" alt="">
+
             </div>
-
+            <div class="col-md-7 pt-5 order-2 order-md-1" data-aos="fade-right">
+                <h3>My Hobbies</h3>
+                <p>
+                    Outside of work, I have a passion for travelling.
+                    In May of 2022, I had the opportunity to take 4 months of sabbatical leave to travel through Latin America.
+                    This was a dream of mine for many years before I actually went on the trip, and was part of my decision 2 years prior to begin learning Spanish, something I have continued to a level of conversational fluency.
+                    My favourite thing about travelling is meeting new people from all over the world, and sharing unique experiences with them.
+                </p>
+                <p>
+                    You can read more about my travels <a asp-controller="Travel" asp-action="Index">here</a>.
+                </p>
+            </div>
         </div>
     </div>
 </section><!-- End Features Section -->

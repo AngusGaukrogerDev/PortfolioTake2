@@ -2,6 +2,98 @@
 @{
     ViewData["Title"] = "Index";
 }
+<div class="align-content-center">
+    <div class="section-title">
+        <h1>My Travels</h1>
+        <p>I've had the privilage in my life to travel a lot from a very early age. For this, I have to thank my parents for taking me to some
+            incredible places throughout my childhood and creating my passion to explore new places and chase new experiences.
+        </p>
+    </div>
+    <div class="row content">
+        <div class="col-md-5 order-1 order-md-2" data-aos="fade-left">
+            <img src="/Images/route.png" />
+        </div>
+        <div class="col-md-7 pt-5 order-2 order-md-1" data-aos="fade-right">
+            <p>
+                A few years ago, the continent of South America caught my attention. I had previously travelled many times within Europe, but I had 
+                never left before. The culture, colour and beautiful landscapes of South America resonated with me, and as I began to search more,
+                I grew a passion for this part of the world. I remember while researching Colombia, Ecuador and Perú; I would find beautiful places 
+                and save them on Google Maps with a green pin marked "Want to Go". Now, my Google Maps is flooded with green pins in this region,
+                many of which are places I have now visited.
+            </p>
+            <p>
+                In May of 2022, I finally got to opportunity to go on my trip to South America. This is something I had pushed back multiple times
+                due to the COVID-19 pandemic and also searching for someone to travel with. At some point in February 2022 I decided that enough was enough.
+                I was going to travel solo, for a minimum of 3 months, with a route a starting in Colombia, passing through Ecuador and finishing
+                in Perú (although little did I know at that point, it would not be anything like this!).
+            </p>
+        </div>
+    </div>
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team">
+        <div class="container" data-aos="fade-up">
 
-<h1>Index</h1>
+            <div class="section-title">
+                <h2>Destinations</h2>
+                <p>Here are a few of the destinations I've visited most recently! Click on each photo to navigate to that section of the blog!</p>
+            </div>
+
+            <div class="row">
+
+                <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="member">
+                        <img src="/Images/Barcelona.png" class="img-fluid" alt="">
+                        <a asp-controller="Spain" asp-action="Index"></a>
+                        <div class="member-info">
+                            <div class="member-info-content">
+                                <h4>Spain</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="member">
+                        <img src="/Images/Salento.png" class="img-fluid" alt="">
+                        <a asp-controller="Colombia" asp-action="Index"></a>
+                        <div class="member-info">
+                            <div class="member-info-content">
+                                <h4>Colombia</h4>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="member">
+                        <img src="~/Images/Cuenca.png" class="img-fluid" alt="">
+                        <a asp-controller="Ecuador" asp-action="Index"></a>
+                        <div class="member-info">
+                            <div class="member-info-content">
+                                <h4>Ecuador</h4>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="member">
+                        <img asp-controller="Peru" asp-action="Index" src="/Images/MachuPicchu.png" class="img-fluid" alt="">
+                        <a role="button" asp-controller="Peru" asp-action="Index"></a>
+                        <div class="member-info">
+                            <div class="member-info-content">
+                                <h4>Perú</h4>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section><!-- End Team Section -->
+</div>
 
