@@ -1,0 +1,71 @@
+﻿@model IEnumerable<PortfolioTake2.Models.Flashcard>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.EnglishWord)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SpanishWord)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ImagePromptLink)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VideoPromptLink)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CardLevel)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NumberOfReviews)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LastReviewTimestamp)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.EnglishWord)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SpanishWord)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ImagePromptLink)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VideoPromptLink)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CardLevel)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumberOfReviews)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LastReviewTimestamp)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
